@@ -23,4 +23,4 @@ Auth::routes();
 
 Auth::routes();
 
-Route::get('/dashboard', 'DashbaordController@dashboard');
+Route::get('/dashboard', 'DashboardController@dashboard');

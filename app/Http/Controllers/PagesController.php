@@ -14,7 +14,7 @@ class PagesController extends Controller
     public function about() {
       $title = 'About me';
       return view('pages.about')->with('title', $title);
-      
+
     }
   
     public function craft() {
@@ -23,5 +23,9 @@ class PagesController extends Controller
         'crafts' => ['Web Dev', 'Android Dev', 'Back-End']
       );
       return view('pages.craft')->with($data);
+    }
+
+    public function dashboard() {
+      return view('dashboard');
     }
 }

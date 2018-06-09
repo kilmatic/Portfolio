@@ -18,8 +18,9 @@ Route::get('/about', 'PagesController@about');
 Route::get('/craft', 'PagesController@craft');
 
 Route::resource('posts', 'PostsController');
-Auth::routes();
 
 Auth::routes();
 
-Route::get('/dashboard', 'DashboardController@index')->name('dashboard');
+Auth::routes();
+
+Route::get('/dashboard', 'DashbaordController@dashboard');

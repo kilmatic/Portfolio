@@ -6,7 +6,7 @@
         {!!$post->body!!}  
     </div>
     <hr>
-    <small>Writtin on: {{$post->created_at}} by {{$post->user->name}}</small>
+    <small>Writtin on: {{$post->created_at}} by <strong>{{$post->user->name}}</strong></small>
     <hr>
     @if(!Auth::guest())
         @if(Auth::user()->id == $post->user_id)

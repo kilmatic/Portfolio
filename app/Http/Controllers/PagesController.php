@@ -24,8 +24,4 @@ class PagesController extends Controller
       );
       return view('pages.craft')->with($data);
     }
-
-    public function dashboard() {
-      return view('dashboard');
-    }
 }

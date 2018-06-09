@@ -37,7 +37,7 @@
                     </table>
                     @else
                       <hr>
-                      <p>You have no posts on the blog...</p>
+                      <p>You have no posts on the blog yet...</p>
                     @endif
                 </div>
             </div>

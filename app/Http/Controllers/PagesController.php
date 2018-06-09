@@ -14,6 +14,7 @@ class PagesController extends Controller
     public function about() {
       $title = 'About me';
       return view('pages.about')->with('title', $title);
+      
     }
   
     public function craft() {

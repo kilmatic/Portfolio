@@ -6,7 +6,6 @@ use Illuminate\Http\Request;
 
 class PagesController extends Controller
 {
-    //
     public function index() {
       $title = 'Welcome to my Portfolio Website';
       return view('pages.index')->with('title', $title);

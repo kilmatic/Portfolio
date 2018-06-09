@@ -4,8 +4,9 @@
     <h1>{{$title}}</h1>
     <p>This is the start my page!!!</p>
     <p>
-      <a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
-      <a class="btn btn-success btn-lg" href="/register" role="button">Register</a>
+      <!--<a class="btn btn-primary btn-lg" href="/login" role="button">Login</a>
+      <a class="btn btn-success btn-lg" href="/register" role="button">Register</a> 
+      <img style="width:150px" src="/storage/cover_image/70368_1528576965" alt="kanya">-->
     </p>
   </div>
 @endsection('content')

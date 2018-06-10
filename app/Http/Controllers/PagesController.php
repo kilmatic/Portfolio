@@ -20,7 +20,7 @@ class PagesController extends Controller
     public function craft() {
       $data = array(
         'title' => 'My work',
-        'crafts' => ['Web Dev', 'Android Dev', 'Back-End']
+        'crafts' => ['PHP', 'Android Dev', 'Back-End', 'MVC Dev', 'C#', 'Laravel']
       );
       return view('pages.craft')->with($data);
     }

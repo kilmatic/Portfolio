@@ -12,6 +12,9 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>        
+        body { padding-top: 70px; }
+    </style>
 </head>
 <body>
     <div id="app">

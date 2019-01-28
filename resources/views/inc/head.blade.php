@@ -12,6 +12,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
     <style>        
         a,
         a:focus,
@@ -108,9 +109,15 @@
         }
 
         .logo_image {
-            width: 3em;
-            height: 3em;
+            width: 1.5em;
+            height: 1.5em;
         }
+
+        .devicon-git-plain {
+            max-width: 3em;
+        }
+
+
 
         @media (min-width: 768px) {
             .masthead-brand {

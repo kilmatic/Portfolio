@@ -10,10 +10,11 @@
 
     <title>{{ config('app.name', 'Kil\'matic') }}</title>
 
-    <!-- Styles -->
-    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <!-- Styles -->    
     <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
-    <style>        
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <style>   
+         
         a,
         a:focus,
         a:hover {
@@ -109,7 +110,7 @@
         }
 
         .logo_image {
-            width: 1.5em;
+            width: 1.8em;
             height: 1.5em;
         }
 
@@ -117,7 +118,22 @@
             max-width: 3em;
         }
 
+        .float{
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 4%;
+            right: 2%;
+            background-color: #0C9;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            box-shadow: 2px 2px 3px #999;
+        }
 
+        .my-float{
+            margin-top: 22px;
+        }
 
         @media (min-width: 768px) {
             .masthead-brand {
@@ -134,7 +150,8 @@
         */
 
         .cover {
-            padding: 0 20px;
+            padding: 0 5.2em;
+            margin: 2em 0;
         }
         .cover .btn-lg {
             padding: 10px 20px;
@@ -156,6 +173,12 @@
                 vertical-align: middle;
             }
 
+        }
+
+        @media only screen and (max-width : 480px) {
+            .devicon-git-plain {
+                max-width: 2em;
+            }
         }
 
     </style>

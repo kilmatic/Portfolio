@@ -5,17 +5,14 @@
         <div class="row">
             <div class="col-md-8 col-md-offset-2">
                 <div class="panel panel-default">
-                    <div class="panel-heading">Dashboard</div>
-
+                    <div style="text-align:center" class="panel-heading">{{Auth::user()->name}}</div>
                     <div class="panel-body">
                         @if (session('status'))
                             <div class="alert alert-success">
                                 {{ session('status') }}
                             </div>
                         @endif
-                        <div class="well">
-                            <img style="width:25%" src="/storage/cover_image/70368_1528578597.jpg">
-                        </div>
+                        <img style="width:25%;height:25%;" src="/storage/cover_image/face.jpg" class="img-circle">
                         <hr>
                         <a href="/posts/create" class="btn btn-primary">Create Post</a><br><br>
                         @if(count($posts) > 0)
@@ -27,7 +24,7 @@
                             </tr>  
                             @foreach($posts as $post)
                                 <tr>
-                                    <td>{{$post->title}}</td>
+                                    <td><a href="/posts/{{$post->id}}">{{$post->title}}</a></td>
                                     <td><a href="/posts/{{$post->id}}/edit" class="btn btn-default">Edit</a></td>
                                     <td>
                                         {!!Form::open(['action' => ['PostsController@destroy', $post->id], 'method' => 'POST', 'class' => 'pull-right'])!!}

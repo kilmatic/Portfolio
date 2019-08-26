@@ -39,7 +39,7 @@
         body {
             min-height: 100%;
             background-color: rgba(51, 51, 51, 0.75);
-            background-image: url('https://ik.imagekit.io/83dhckxhugrjz/hall_H13Q3ismV.jpg'); 
+            background-image: url("/storage/cover_image/hall.jpg"); 
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover; 
@@ -179,7 +179,7 @@
             .devicon-git-plain {
                 max-width: 2em;
             }
-        }
+        }      
 
     </style>
 </head>

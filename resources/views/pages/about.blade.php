@@ -1,7 +1,8 @@
 @extends('layouts.app')
 @section('content')
     <div class="container-fluid">
-        {{-- <h1 style="text-align:center;">{{$title}}</h1><br> --}}
+        <h1 style="text-align:center;text-decoration:underline">{{$title}}</h1><br>
+        <hr>
         <div class="row" style="display:flex">
             <div class="col-md-3">
                 <img style="width:50%" src="\storage\cover_image\70368_1549386163.JPG" class="img-circle center-block"><br><br>
@@ -15,7 +16,7 @@
             </div>
         </div>
         <div class="row">
-            <h1 style="text-align:center;">Skills</h1><br>
+            <h1 style="text-align:center;text-decoration:underline">Skills</h1><br>
         </div>
         <hr>
         <div style="text-align:center;width:85%;margin:auto;font-size:.1px;" class="row">
@@ -99,8 +100,14 @@
             </div>
         </div>
         <br>
-        <div class="row">
-            <h1 style="text-align:center;">Skills</h1><br>
+        <div style="text-align:center;margin:auto;margin-bottom:50px;font-size:.1px;" class="row">
+            <h1 style="text-align:center;text-decoration:underline">Certifications</h1><hr>
+            <div class="card">
+                <img src="\storage\images\MTA-Software-Development-Fundamentals-2018.png" alt="mta-cert" class="card-imgtop" style="margin:20px;">
+                <div class="card-block">
+                    <a href="https://www.youracclaim.com/badges/15f01562-8ad1-45f9-a8d0-efdd7b6b628e/public_url" class="btn btn-primary">Verify Cert</a>
+                </div>
+            </div>
         </div>
     </div>
 @endsection

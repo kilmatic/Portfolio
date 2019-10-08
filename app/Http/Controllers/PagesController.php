@@ -13,7 +13,7 @@ class PagesController extends Controller
 
   public function about() {
     $data = [
-      'title' => 'Kanya Kila',
+      'title' => 'About Me',
       'bio' => 'My name is Kanya Kila, I’m a 30-year-old male, 
                 I have been studying I.T since high school. 
                 My enthusiasm has helped me to meet some experts in the I.T industry, 
@@ -21,7 +21,7 @@ class PagesController extends Controller
                 I was taught web design by a web expert working for Rhodes University, 
                 then I had a follow up at college of programming in Web Development and Desktop Application Development.',
       'skills' => ['SQL','Bootstrap','Laravel','ASP.Net MVC','C#','PHP','HTML/5','CSS/3','JavaScript'],
-      'level' => [60,70,50,80,75,60]
+      'certifications' => ['MTA']
     ];
     return view('pages.about')->with($data);
 

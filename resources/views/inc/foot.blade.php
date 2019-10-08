@@ -7,8 +7,7 @@
             var vp_height = $(window).height();
             $('.site-wrapper, body').css({"height":vp_height.toString()});
         });
-    } while (vp_height > 0);
-    
+    } while (vp_height > 0);    
 </script>
 </body>
 </html>

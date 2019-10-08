@@ -9,7 +9,7 @@
               <div class="caption">
                 <h3>{{$craft}}</h3>
                 <p>The level of {{$craft}} is Bigginer...</p>
-                <a class="btn btn-info" href="localhost/{{$craft}}">more info</a>
+                <a class="btn btn-info" href="localhost/{{$craft}}/index.html">more info</a>
               </div>
             </div>  
           </div>

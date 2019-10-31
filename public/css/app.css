@@ -5927,6 +5927,7 @@ input[type="submit"] {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: fixed;
   height: 726.125px;
   background-color: rgba(0, 0, 0, 0.95);
 }
@@ -5962,7 +5963,7 @@ input[type="submit"] {
 }
 
 .craft-work {
-  box-shadow: 5px 0 5px -2px rgba(0, 0, 0, 0.95);
+  box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.95);
   height: 726.125px;
   z-index: 1000;
 }

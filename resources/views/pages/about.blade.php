@@ -1,25 +1,23 @@
 @extends('layouts.app')
 @section('content')
-    <div class="container-fluid">
-        <h1 style="text-align:center;text-decoration:underline">{{$title}}</h1><br>
-        <hr>
-        <div class="row" style="display:flex">
+    <div class="container-fluid about-container">
+        <h3>{{$title[0]}}</h3>
+        <br>
+        <div class="row bio">
             <div class="col-md-3">
-                <img style="width:50%" src="\storage\cover_image\70368_1549386163.JPG" class="img-circle center-block"><br><br>
+                <img src="\storage\cover_image\70368_1549386163.JPG" class="img-circle center-block"><br><br>
             </div>
             <div class="col-md-9">
                 <blockquote>
                     {{$bio}}
-                    <br><br>
-                    <footer class="blockquote-footer pull-right"><cite title="Source Title">Kanya Kila</cite></footer>
-                </blockquote>
+                    <br>
+                    <footer class="blockquote-footer pull-right"><cite title="Source Title">Kanya Kila</cite></footer>                    
+                </blockquote>  
             </div>
         </div>
-        <div class="row">
-            <h1 style="text-align:center;text-decoration:underline">Skills</h1><br>
-        </div>
+        <h3>{{$title[1]}}</h3> 
         <hr>
-        <div style="text-align:center;width:85%;margin:auto;font-size:.1px;" class="row">
+        <div class="row">
             <div class="col-md-2">
                 <div class="service">
                     <svg class="devicon-git-plain" viewBox="0 0 128 128">
@@ -100,14 +98,17 @@
             </div>
         </div>
         <br>
-        <div style="text-align:center;margin:auto;margin-bottom:50px;font-size:.1px;" class="row">
-            <h1 style="text-align:center;text-decoration:underline">Certifications</h1><hr>
+        <h3>{{$title[2]}}</h3>
+        <hr>
+        <div class="row">
             <div class="card">
-                <img src="\storage\images\MTA-Software-Development-Fundamentals-2018.png" alt="mta-cert" class="card-imgtop" style="margin:20px;">
-                <div class="card-block">
+                <img class="card-img-top img-fluid" src="\storage\images\MTA-Software-Development-Fundamentals-2018.png" alt="mta-cert" width="200px;" style="margin:0 0 1.5em 0;">
+                <div class="card-block text-xs-center">
                     <a href="https://www.youracclaim.com/badges/15f01562-8ad1-45f9-a8d0-efdd7b6b628e/public_url" class="btn btn-primary">Verify Cert</a>
                 </div>
             </div>
         </div>
+        
+        
     </div>
 @endsection

@@ -13,7 +13,7 @@ class PagesController extends Controller
 
   public function about() {
     $data = [
-      'title' => 'About Me',
+      'title' => ['About Me','My Tech Stack','Skillset'],
       'bio' => 'My name is Kanya Kila, I’m a 30-year-old male, 
                 I have been studying I.T since high school. 
                 My enthusiasm has helped me to meet some experts in the I.T industry, 
@@ -30,7 +30,7 @@ class PagesController extends Controller
   public function craft() {
     $data = [
       'title' => 'My work',
-      'crafts' => ['karsareus','Dreamshare','Back-End','ASP.Net MVC','C#','portfolio']
+      'crafts' => ['karsareus','Dreamshare','portfolio']
     ];
     return view('pages.craft')->with($data);
   }

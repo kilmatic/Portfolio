@@ -1,0 +1,10 @@
+
+> fibers@4.0.1 install C:\xampp\htdocs\Portfolio\node_modules\fibers
+> node build.js || nodejs build.js
+
+`win32-x64-64` exists; testing
+Binary is fine; exiting
++ fibers@4.0.1
+added 2 packages from 3 contributors and audited 22085 packages in 12.027s
+found 0 vulnerabilities
+

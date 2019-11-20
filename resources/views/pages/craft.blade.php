@@ -1,23 +1,24 @@
 @extends('layouts.app')
 @section('content')
   <div class="container-fluid craft-container">
-    <div class="col-lg-7 craft-columns craft-work">
-      <h1>{{$title}}</h1>
+    <div class="col-lg-8 craft-columns craft-work">
       @if(count($crafts) > 0)
         @foreach($crafts as $craft)
-            <div class="col-xs-6 col-md-6" style="">
-              <div class="thumbnail kars" style="background-image:url('/storage/cover_image/{{$craft}}.JPG');background-size:cover;">
-                <div class="caption">
-                  <h3>{{$craft}}</h3>
-                  <p>The level of {{$craft}} is Bigginer...</p>
-                  <a class="btn btn-info" href="localhost/{{$craft}}/index.html">more info</a>
-                </div>
+            <div class="row">
+              <div class="col-md-5">
+                <img src="/storage/cover_image/{{$craft}}.JPG" style="">                
+              </div>
+              <div class="col-md-7">
+                <h3>{{$craft}}</h3>
+                <p>The level of {{$craft}} is Bigginer...</p>
+                <a class="btn btn-info">Preview</a>
+                <a class="btn btn-info" href="localhost/{{$craft}}/index.html">Visit</a>
               </div>  
             </div>
         @endforeach
       @endif 
     </div>
-    <div class="col-lg-5 text-xs-center craft-column craft-form effect3">
+    <div class="col-lg-4 text-xs-center craft-form ">
       <h1>Get in Touch</h1>
       <div class="row social">        
         <span class="social_icons">
@@ -63,7 +64,9 @@
               {{Form::label('body', 'Body')}}
               {{Form::textarea('body', '', ['class' => 'form-control', 'placeholder' =>'Body Text', 'rows' => '6'])}}
             </div>
-            {{Form::submit('Submit', ['id' => 'submit-form', 'class' => 'pull-right'])}}
+            <div class="col-md-12 text-center">
+              {{Form::submit('Submit', ['id' => 'submit-form'])}}
+            </div>
           {!! Form::close() !!}
         </div> 
       </div>

@@ -5868,10 +5868,13 @@ readers do not read off random characters that represent icons */
 body {
   widows: 100%;
   height: 100%;
+  background-color: #FFF !important;
 }
 
 .container {
   width: 100%;
+  z-index: 2000;
+  font-family: monospace !important;
 }
 
 .about-container {
@@ -5905,11 +5908,8 @@ body {
   margin: auto;
 }
 
-.craft-column {
-  padding-bottom: 0;
-}
-
-.craft-column h1,
+.craft-form h1,
+.craft-work h1,
 .craft-form h2,
 .craft-form h3,
 .craft-form h4,
@@ -5918,7 +5918,7 @@ input[type="submit"] {
   text-align: center;
 }
 
-.craft-column h1 {
+.craft-form h1 {
   padding: .2em;
 }
 
@@ -5928,44 +5928,41 @@ input[type="submit"] {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 726.125px;
-  background-color: rgba(0, 0, 0, 0.95);
+  padding-bottom: 1.5em;
 }
 
 #submit-form {
-  font-family: Roboto, Montserrat;
   border: #4eff7a solid 2px;
   border-radius: 30px;
   background-color: transparent;
-  padding: .5em 1em .5em 1em;
+  padding: .5em 2em .5em 2em;
+  margin: 1em 0 0 0;
   font-size: 1em;
   font-weight: 900;
   color: #4eff83;
-  margin-right: 40%;
 }
 
-.effect3 {
-  position: relative;
-}
-
-.effect3:before {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  left: 10px;
-  width: 50%;
-  top: 80%;
-  max-width: 300px;
-  background: #777;
-  box-shadow: 0 15px 10px #777;
-  transform: rotate(-3deg);
+#submit-form:hover {
+  background-color: rgba(78, 255, 122, 0.1);
 }
 
 .craft-work {
-  box-shadow: 2px 0 5px -2px rgba(0, 0, 0, 0.95);
-  height: 726.125px;
   z-index: 1000;
+  display: flex;
+  flex-flow: column;
+  padding: 0 0 0 10em !important;
+  background: rgba(224, 228, 228, 0.856);
+  height: 736px;
+}
+
+.craft-work img {
+  width: 350px;
+  margin: 1em 0;
+}
+
+.panel {
+  font-family: monospace;
+  margin-top: 15%;
 }
 
 .social {
@@ -5986,12 +5983,56 @@ input[type="submit"] {
 
 .craft-container {
   margin-top: 50px;
+  margin-bottom: 3.78em;
   width: 100%;
 }
 
-.page-footer {
-  position: relative;
+.posts-container {
+  width: 100%;
+  height: 100%;
+  background: url(/images/371905140_MEET_ROBOT_400px.gif?5038f6672f089f3a50c4f075feddfc42);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.posts-widget {
+  width: 65%;
+  margin: 0 auto;
+  margin-top: 10%;
+  padding: 2em;
+}
+
+.posts-widget .media {
+  margin-bottom: 2em;
+}
+
+.posts-widget small {
+  font: "Raleway";
+}
+
+.posts-widget blockquote {
+  margin-top: 2em;
+}
+
+.center {
+  text-align: center;
+}
+
+#post-image {
+  width: 50px;
+  height: 50px;
+}
+
+footer {
+  position: fixed;
   bottom: 0;
+  background: #252424;
+  color: #ebe6e6;
+  padding: 1em 0;
+  width: 100%;
+  z-index: 1000;
+  margin-bottom: 0 auto;
 }
 
 /*!

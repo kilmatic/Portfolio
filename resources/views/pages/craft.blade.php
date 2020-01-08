@@ -8,7 +8,7 @@
               <div class="col-md-5">
                 <img src="/storage/cover_image/{{$craft}}.JPG" style="">                
               </div>
-              <div class="col-md-7">
+              <div class="col-md-6">
                 <h3>{{$craft}}</h3>
                 <p>The level of {{$craft}} is Bigginer...</p>
                 <a class="btn btn-info">Preview</a>

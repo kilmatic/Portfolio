@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
     <div class="posts-container">
-        <h1 class="center">Posts</h1>
+        {{-- <h1 class="center clear-top">Posts</h1> --}}
         <div class="posts-widget">
             @if(count($posts) > 0)
                 @foreach($posts as $post)

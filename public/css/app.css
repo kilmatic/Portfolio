@@ -1,6 +1,7 @@
-@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);@charset "UTF-8";
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+/* @charset "UTF-8"; */
 
-/*!
+/*!`
  * Font Awesome Free 5.11.2 by @fontawesome - https://fontawesome.com
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
@@ -5871,168 +5872,13 @@ body {
   background-color: #FFF !important;
 }
 
+.social-icons-container {
+  width: 230px;
+}
+
 .container {
-  width: 100%;
-  z-index: 2000;
   font-family: monospace !important;
-}
-
-.about-container {
-  width: 950px;
-  margin-bottom: 3em;
-}
-
-.about-container h3 {
-  text-align: center;
-}
-
-.bio {
-  background: url();
-  display: flex;
-  margin: auto;
-  padding: 3em;
-}
-
-.bio img {
-  width: 80%;
-  position: relative;
-  left: -10%;
-}
-
-.bio blockquote {
-  font-size: medium;
-}
-
-.service {
-  width: 70px;
-  margin: auto;
-}
-
-.craft-form h1,
-.craft-work h1,
-.craft-form h2,
-.craft-form h3,
-.craft-form h4,
-.craft-form h5,
-input[type="submit"] {
-  text-align: center;
-}
-
-.craft-form h1 {
-  padding: .2em;
-}
-
-.craft-form {
-  background: url(/images/photo.jpg?a06d67e09d1a3476f44237dda9d7e31e);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  padding-bottom: 1.5em;
-}
-
-#submit-form {
-  border: #4eff7a solid 2px;
-  border-radius: 30px;
-  background-color: transparent;
-  padding: .5em 2em .5em 2em;
-  margin: 1em 0 0 0;
-  font-size: 1em;
-  font-weight: 900;
-  color: #4eff83;
-}
-
-#submit-form:hover {
-  background-color: rgba(78, 255, 122, 0.1);
-}
-
-.craft-work {
-  z-index: 1000;
-  display: flex;
-  flex-flow: column;
-  padding: 0 0 0 10em !important;
-  background: rgba(224, 228, 228, 0.856);
-  height: 736px;
-}
-
-.craft-work img {
-  width: 100%;
-  margin: 1em 0;
-}
-
-.panel {
-  font-family: monospace;
-  margin-top: 15%;
-}
-
-.social {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-}
-
-.social_icons {
-  margin: 0 2em;
-  text-align: center;
   height: 100%;
-}
-
-.container-fluid {
-  padding: 0 !important;
-}
-
-.craft-container {
-  margin-top: 50px;
-  margin-bottom: 3.78em;
-  width: 100%;
-}
-
-.posts-container {
-  width: 100%;
-  height: 100%;
-  background: url(/images/371905140_MEET_ROBOT_400px.gif?5038f6672f089f3a50c4f075feddfc42);
-  background-position: right;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.posts-widget {
-  width: 65%;
-  margin: 0 auto;
-  margin-top: 10%;
-  padding: 2em;
-}
-
-.posts-widget .media {
-  margin-bottom: 2em;
-}
-
-.posts-widget small {
-  font: "Raleway";
-}
-
-.posts-widget blockquote {
-  margin-top: 2em;
-}
-
-.center {
-  text-align: center;
-}
-
-#post-image {
-  width: 50px;
-  height: 50px;
-}
-
-footer {
-  position: fixed;
-  bottom: 0;
-  background: #252424;
-  color: #ebe6e6;
-  padding: 1em 0;
-  width: 100%;
-  z-index: 1000;
-  margin-bottom: 0 auto;
 }
 
 /*!

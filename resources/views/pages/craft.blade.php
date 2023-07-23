@@ -12,13 +12,13 @@
                 <h3>{{$craft}}</h3>
                 <p>The level of {{$craft}} is Bigginer...</p>
                 <a class="btn btn-info">Preview</a>
-                <a class="btn btn-info" href="localhost/{{$craft}}/index.html">Visit</a>
+                <a class="btn btn-info" href="{{$craft}}">Visit</a>
               </div>  
             </div>
         @endforeach
       @endif 
     </div>
-    <div class="col-lg-4 text-xs-center craft-form ">
+    <div class="col-lg-4 text-xs-center container-fluid craft-form ">
       <h1>Get in Touch</h1>
       <div class="row social">        
         <span class="social_icons">

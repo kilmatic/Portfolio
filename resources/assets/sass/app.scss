@@ -1,16 +1,11 @@
-//Font awesome
-@import "../../../fontawesome/scss/fontawesome.scss";
-@import "../../../fontawesome/scss/solid.scss";
-@import "../../../fontawesome/scss/brands.scss";
-
 // Fonts
-@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
+// @import url("https://fonts.googleapis.com/css?family=Raleway:300,400,600");
 
 // Variables
 @import "variables";
 
 // Custom CSS
-@import "custom.scss";
+@import "custom";
 
 // Bootstrap
 @import "../../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";

@@ -4,10 +4,10 @@ body {
     background-color: #FFF !important;
 }
 
-// #app {
-//     display: flex;
-//     width: 100%;
-// }
+#app {
+    display: flex;
+    width: 100%;
+}
 
 // .masthead-nav {
 
@@ -36,7 +36,7 @@ body {
 .about-container {
     width: 850px !important;
     margin-bottom: 3em;
-    // border: solid red 1px;
+    border: solid red 1px;
 }
 
 .about-container h3 {

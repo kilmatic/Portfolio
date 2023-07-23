@@ -24,14 +24,21 @@ class PagesController extends Controller
       'certifications' => ['MTA']
     ];
     return view('pages.about')->with($data);
-
   }
-
+  
   public function craft() {
     $data = [
       'title' => 'My work',
       'crafts' => ['karsareus','Dreamshare','portfolio']
     ];
     return view('pages.craft')->with($data);
+  }
+
+  
+  public function contact() {
+    $data = [
+      'title' => 'Contact'
+    ];
+    return view('pages.contact')->with($data);
   }
 }

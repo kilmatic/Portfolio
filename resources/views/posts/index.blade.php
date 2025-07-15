@@ -21,6 +21,7 @@
                 {{$posts->links()}}
             @else
                 <p>No posts yet</p>
+            
             @endif
         </div>        
     </div>

@@ -20,8 +20,8 @@
                 @endforeach
                 {{$posts->links()}}
             @else
-                <p>No posts yet</p>
-            
+                <p>No posts yet ...</p>
+                <button class="btn btn-primary"><a href="/posts/create" style="color:white">Create Post</a></button>
             @endif
         </div>        
     </div>
